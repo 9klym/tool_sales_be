@@ -109,6 +109,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.5.2)
     rack (2.2.3)
+    rack-cors (1.0.6)
+      rack (>= 1.6.0)
     rack-test (1.1.0)
       rack (>= 1.0, < 3)
     rails (6.1.2.1)
@@ -157,6 +159,10 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.9.0)
     rspec-support (3.9.3)
+    simple_token_authentication (1.17.0)
+      actionmailer (>= 3.2.6, < 7)
+      actionpack (>= 3.2.6, < 7)
+      devise (>= 3.2, < 6)
     spring (2.1.1)
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
@@ -186,8 +192,10 @@ DEPENDENCIES
   pg (~> 1.1)
   pry
   puma (~> 5.0)
+  rack-cors
   rails (~> 6.1.2, >= 6.1.2.1)
   rspec
+  simple_token_authentication (~> 1.0)
   spring
   tzinfo-data
 
