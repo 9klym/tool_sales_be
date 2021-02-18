@@ -10,6 +10,8 @@ Rails.application.routes.draw do
         delete 'log_out', to: 'session#delete'
         get 'suppliers', to: 'supplier#index'
         get 'tools', to: 'tool#index'
+        get 'invoices', to: 'invoice#index'
+        post 'invoices', to: 'invoice#create'
       end
     end
   end

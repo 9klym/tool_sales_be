@@ -26,7 +26,7 @@ module Api
       def tools
         return SupplierProduct.all unless filter_params[:supplier_ids]
 
-        SupplierProduct.where(id: filter_params[:supplier_ids])
+        SupplierProduct.where(supplier_id: filter_params[:supplier_ids])
       end
     end
   end
